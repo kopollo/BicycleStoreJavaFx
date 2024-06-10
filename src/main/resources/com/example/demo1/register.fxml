@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -16,20 +18,22 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="200.0" layoutY="109.0" prefHeight="51.0" prefWidth="407.0" text="Добро пожаловать">
+      <Label layoutX="149.0" layoutY="106.0" prefHeight="51.0" prefWidth="407.0" text="Добро пожаловать">
          <font>
             <Font size="35.0" />
          </font>
       </Label>
-      <Button layoutX="233.0" layoutY="271.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" text="Войти">
+      <PasswordField layoutX="210.0" layoutY="235.0" prefHeight="43.0" prefWidth="265.0" promptText="пароль">
          <font>
             <Font size="17.0" />
-         </font>
-      </Button>
-      <Button layoutX="233.0" layoutY="200.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-background-color: 146b85;" text="Зарегистрироваться ">
+         </font></PasswordField>
+      <TextField layoutX="210.0" layoutY="170.0" prefHeight="43.0" prefWidth="265.0" promptText="логин">
          <font>
             <Font size="17.0" />
-         </font>
-      </Button>
+         </font></TextField>
+      <Button layoutX="243.0" layoutY="300.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="200.0" text="Зарегистрироваться">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
    </children>
 </AnchorPane>
