@@ -1,11 +1,11 @@
-package com.example.demo1;
+package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
-public class HelloController {
+public class AuthController {
 
     @FXML
     private Button btn1;
