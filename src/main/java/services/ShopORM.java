@@ -33,7 +33,7 @@ public class ShopORM {
             String name = resultSet.getString("name");
             String address = resultSet.getString("address");
             return new Shop(
-                    resultSet.getInt("id"),
+                    id,
                     name,
                     address
             );
