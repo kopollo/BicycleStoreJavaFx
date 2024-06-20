@@ -6,9 +6,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
+import models.Client;
 import models.Database;
+import services.ClientORM;
 
 
 public class HelloApplication extends Application {
@@ -24,27 +28,21 @@ public class HelloApplication extends Application {
     public static void main(String[] args) throws SQLException {
 //        launch();
 //        System.out.println("xXXXXX");
-        String url = "jdbc:mysql://localhost/bicycle_store";
-        String username = "root";
-        String password = "";
+//        String url = "jdbc:mysql://localhost/bicycle_store";
+//        String username = "root";
+//        String password = "";
+        String url = "jdbc:mysql://std-mysql.ist.mospolytech.ru:3306/std_2651_staff";
+        String username = "std_2651_staff";
+        String password = "std_2651_staff";
 
         Database database = new Database(url, username, password);
-        UserDAO userDAO = new UserDAO(database.open());
+        Connection conn = database.open();
+        ClientORM orm = new ClientORM(conn);
+        ArrayList<Client> clients = orm.getAll();
+        for(Client x: clients) {
+            System.out.println(x.getName());
+        }
 
-//        // добавление пользователя
-//        User user = new User(0, "1234567890", "John Smith", "123 Main St", "password", "admin");
-//        userDAO.addUser(user);
-
-        // чтение пользователя
-        User userById = userDAO.getUserById(1);
-        System.out.println(userById.getName());
-
-//        // обновление пользователя
-//        user.setAddress("456 Main St");
-//        userDAO.updateUser(user);
-//
-//        // удаление пользователя
-//        userDAO.deleteUser(1);
 
         database.close();
 //        database db = new database();

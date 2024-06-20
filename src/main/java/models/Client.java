@@ -5,18 +5,16 @@ public class Client {
     private String passport;
     private String name;
     private String address;
-    private String password;
 
-    public Client(int id, String passport, String name, String address, String password) {
+    public Client(int id, String passport, String name, String address) {
         this.id = id;
         this.passport = passport;
         this.name = name;
         this.address = address;
-        this.password = password;
     }
 
-    public Client(String passport, String name, String address, String password) {
-        this(0, passport, name, address, password);
+    public Client(String passport, String name, String address) {
+        this(0, passport, name, address);
     }
 
     public int getId() {
@@ -45,13 +43,5 @@ public class Client {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 }
