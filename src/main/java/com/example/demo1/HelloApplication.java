@@ -6,12 +6,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.SQLException;
 
 import models.Database;
-import models.User;
-import services.UserDAO;
 
 
 public class HelloApplication extends Application {
