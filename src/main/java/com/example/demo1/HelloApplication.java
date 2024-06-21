@@ -31,9 +31,9 @@ public class HelloApplication extends Application {
 //        String url = "jdbc:mysql://localhost/bicycle_store";
 //        String username = "root";
 //        String password = "";
-        String url = "jdbc:mysql://std-mysql.ist.mospolytech.ru:3306/std_2651_staff";
-        String username = "std_2651_staff";
-        String password = "std_2651_staff";
+        String url = "jdbc:mysql://std-mysql.ist.mospolytech.ru:3306/std_2651_bicycle_store";
+        String username = "std_2651_bicycle_store";
+        String password = "std_2651_bicycle_store";
 
         Database database = new Database(url, username, password);
         Connection conn = database.open();

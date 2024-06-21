@@ -29,18 +29,18 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="200.0" prefHeight="500.0" prefWidth="502.0" style="-fx-background-color: #ADADAD;">
+            <AnchorPane layoutX="206.0" prefHeight="500.0" prefWidth="502.0" style="-fx-background-color: #ADADAD;">
                <children>
                   <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="44.0" prefHeight="49.0" prefWidth="260.0" style="-fx-background-insets: RED;" text="Главная" textFill="#907878">
                      <font>
                         <Font size="29.0" />
                      </font>
                   </Label>
-                  <Button layoutX="121.0" layoutY="317.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="260.0" text="Создать запись об аренде">
+                  <Button layoutX="121.0" layoutY="250.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="260.0" text="Создать запись об аренде">
                      <font>
                         <Font size="16.0" />
                      </font></Button>
-                  <Button layoutX="121.0" layoutY="250.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="260.0" text="Создать запись о возврате">
+                  <Button layoutX="121.0" layoutY="314.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="260.0" text="Создать запись о возврате">
                      <font>
                         <Font size="16.0" />
                      </font>

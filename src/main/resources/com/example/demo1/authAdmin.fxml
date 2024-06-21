@@ -28,9 +28,18 @@
                         <Font size="29.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="88.0" layoutY="190.0" prefHeight="49.0" prefWidth="293.0" promptText="email" />
-                  <Button layoutX="150.0" layoutY="336.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="170.0" text="Войти" />
-                  <PasswordField layoutX="88.0" layoutY="260.0" prefHeight="49.0" prefWidth="293.0" promptText="Пароль" />
+                  <TextField layoutX="88.0" layoutY="190.0" prefHeight="49.0" prefWidth="293.0" promptText="email">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <Button layoutX="150.0" layoutY="336.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="170.0" text="Войти">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Button>
+                  <PasswordField layoutX="88.0" layoutY="260.0" prefHeight="49.0" prefWidth="293.0" promptText="Пароль">
+                     <font>
+                        <Font size="19.0" />
+                     </font></PasswordField>
                </children>
             </AnchorPane>
          </children>
