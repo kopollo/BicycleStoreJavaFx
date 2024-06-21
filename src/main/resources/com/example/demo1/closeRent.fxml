@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.closeRentPageController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -19,12 +19,12 @@
                         <Font size="29.0" />
                      </font>
                   </Label>
-                  <Button layoutX="27.0" layoutY="416.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="148.0" text="Выйти">
+                  <Button fx:id="exit" layoutX="27.0" layoutY="416.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="148.0" text="Выйти">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button layoutX="27.0" layoutY="354.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="148.0" text="Главная">
+                  <Button fx:id="main" layoutX="27.0" layoutY="354.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="148.0" text="Главная">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -38,10 +38,10 @@
                         <Font size="29.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="121.0" layoutY="132.0" prefHeight="33.0" prefWidth="260.0" promptText="Выберите клиента" />
-                  <ComboBox layoutX="121.0" layoutY="178.0" prefHeight="33.0" prefWidth="260.0" promptText="Номер велосипеда" />
-                  <DatePicker layoutX="121.0" layoutY="234.0" prefHeight="33.0" prefWidth="260.0" promptText="дата сдачи" />
-                  <Button layoutX="177.0" layoutY="294.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="148.0" text="Закрыть сделку">
+                  <ComboBox fx:id="chooseClient" layoutX="121.0" layoutY="132.0" prefHeight="33.0" prefWidth="260.0" promptText="Выберите клиента" />
+                  <ComboBox fx:id="chooseBicycle" layoutX="121.0" layoutY="178.0" prefHeight="33.0" prefWidth="260.0" promptText="Номер велосипеда" />
+                  <DatePicker fx:id="chooseDate" layoutX="121.0" layoutY="234.0" prefHeight="33.0" prefWidth="260.0" promptText="дата сдачи" />
+                  <Button fx:id="closeRent" layoutX="177.0" layoutY="294.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="148.0" text="Закрыть сделку">
                      <font>
                         <Font size="16.0" />
                      </font>

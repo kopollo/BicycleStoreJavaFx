@@ -3,21 +3,24 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 
-public class closeRentPageController {
+public class updateClientPageController {
 
     @FXML
-    private ComboBox<?> chooseBicycle;
+    private Button addClient;
 
     @FXML
     private ComboBox<?> chooseClient;
 
     @FXML
-    private DatePicker chooseDate;
+    private TextField clientAddress;
 
     @FXML
-    private Button closeRent;
+    private TextField clientName;
+
+    @FXML
+    private TextField clientPassport;
 
     @FXML
     private Button exit;
